@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Mediator_design_pattern_product.Mediator.Query
+namespace Mediator_design_pattern_product.Queries.ProductExistsById
 {
     public class ProductExistsByIdQuery : IRequest<bool>
     {

@@ -1,7 +1,7 @@
 ﻿using Mediator_design_pattern_product.Model.Dto;
 using MediatR;
 
-namespace Mediator_design_pattern_product.Mediator.Command
+namespace Mediator_design_pattern_product.Commands.DeleteProduct
 {
     public class DeleteProductCommand : IRequest<bool>
     {
