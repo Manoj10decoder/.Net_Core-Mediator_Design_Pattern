@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Mediator_design_pattern_product.Commands.DeleteProduct
+namespace Mediator_design_pattern_product.Mediator.Command
 {
     public class DeleteProductCommandHandler : IRequestHandler<DeleteProductCommand, bool>
     {

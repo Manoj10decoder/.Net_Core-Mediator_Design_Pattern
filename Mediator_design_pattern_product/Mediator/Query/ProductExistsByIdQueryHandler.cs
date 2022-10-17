@@ -4,7 +4,7 @@ using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Mediator_design_pattern_product.Queries.ProductExistsById
+namespace Mediator_design_pattern_product.Mediator.Query
 {
     public class ProductExistsByIdQueryHandler : IRequestHandler<ProductExistsByIdQuery, bool>
     {

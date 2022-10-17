@@ -1,7 +1,7 @@
 ﻿using Mediator_design_pattern_product.Model.Dto;
 using MediatR;
 
-namespace Mediator_design_pattern_product.Queries.GetProductById
+namespace Mediator_design_pattern_product.Mediator.Query
 {
     public class GetProductByIdQuery : IRequest<ProductDto>
     {

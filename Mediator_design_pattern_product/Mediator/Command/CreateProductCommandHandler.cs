@@ -5,7 +5,7 @@ using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Mediator_design_pattern_product.Commands.CreateProduct
+namespace Mediator_design_pattern_product.Mediator.Command
 {
     public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand, bool>
     {

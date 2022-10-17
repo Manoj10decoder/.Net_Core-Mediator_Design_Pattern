@@ -4,10 +4,10 @@ using MediatR;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Mediator_design_pattern_product.Queries.GetAllProducts
+namespace Mediator_design_pattern_product.Mediator.Query
 {
     // TRequest<TResponse> - TResponse is the type of data that will be returned by Query
-    public class GetAllProductsQuery : IRequest<ICollection<ProductDto>>
+    public class GetAllProductsQuery : IRequest<ICollection<ProductDto>> 
     {
     }
 }

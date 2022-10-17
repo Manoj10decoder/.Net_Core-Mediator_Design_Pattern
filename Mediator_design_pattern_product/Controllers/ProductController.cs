@@ -1,10 +1,6 @@
-﻿using Mediator_design_pattern_product.Commands.CreateProduct;
-using Mediator_design_pattern_product.Commands.DeleteProduct;
-using Mediator_design_pattern_product.Commands.UpdateProduct;
+﻿using Mediator_design_pattern_product.Mediator.Command;
+using Mediator_design_pattern_product.Mediator.Query;
 using Mediator_design_pattern_product.Model.Dto;
-using Mediator_design_pattern_product.Queries.GetAllProducts;
-using Mediator_design_pattern_product.Queries.GetProductById;
-using Mediator_design_pattern_product.Queries.ProductExistsById;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
