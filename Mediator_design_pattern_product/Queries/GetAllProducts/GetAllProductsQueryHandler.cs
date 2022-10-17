@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Mediator_design_pattern_product.Mediator.Query
+namespace Mediator_design_pattern_product.Queries.GetAllProducts
 {
     /*
      * IRequestHandler<TRequest, TResponse> 

@@ -31,22 +31,22 @@ namespace Mediator_design_pattern_product.Repository
 
         public async Task<ICollection<Product>> GetAllProductsAsync()
         {
-            return await _db.Product.OrderBy(a => a.Title).AsNoTracking().ToListAsync();
+            return await _db.Product.OrderBy(a => a.Title).ToListAsync();
         }
 
         public async Task<Product> GetProductByIdAsync(int productId)
         {
-            return await _db.Product.Where(a => a.Id == productId).AsNoTracking().SingleOrDefaultAsync();
+            return await _db.Product.Where(a => a.Id == productId).SingleOrDefaultAsync();
         }
 
         public async Task<bool> ProductExistsAsync(int id)
         {
-            return await _db.Product.AsNoTracking().AnyAsync(a => a.Id == id);
+            return await _db.Product.AnyAsync(a => a.Id == id);
         }
 
         public async Task<bool> ProductExistsAsync(string title)
         {
-            return await _db.Product.AsNoTracking().AnyAsync(a => a.Title.ToLower().Trim() == title.ToLower().Trim());
+            return await _db.Product.AnyAsync(a => a.Title.ToLower().Trim() == title.ToLower().Trim());
         }
 
         public async Task<bool> SaveAsync()
@@ -57,7 +57,6 @@ namespace Mediator_design_pattern_product.Repository
         public async Task<bool> UpdateProductAsync(Product product)
         {
             _db.Product.Update(product);
-            _db.Entry(product).State = EntityState.Modified;
             return await SaveAsync();
         }
     }
